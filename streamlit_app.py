@@ -2,6 +2,9 @@ import requests
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(page_title="Kalkulator Vat", layout="centered")
+
+
 parametry = {"amount": 1, "from": "JPY", "to": "PLN"}
 
 jeny = requests.get("https://api.frankfurter.app/latest", params=parametry)
