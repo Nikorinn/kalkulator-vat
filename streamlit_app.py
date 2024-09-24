@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="Kalkulator Vat", layout="centered")
+st.set_page_config(page_title="Kalkulator Vat", layout="centered", page_icon= “:wave:”)
 
 
 parametry = {"amount": 1, "from": "JPY", "to": "PLN"}
