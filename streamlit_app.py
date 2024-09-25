@@ -83,14 +83,14 @@ kolumny = st.columns([1, 1, 1])
 
 if przycisk1:
     przelicz1()
-    tabelka = pd.DataFrame({"Kwota":kwota,"VAT":kwotavat,"Cło?":clo}, index=([1]))
+    tabelka = pd.DataFrame({"Kwota w zł":kwota,"VAT (23%)":kwotavat,"Cło?":clo}, index=([1]))
     tabelka2 = tabelka.transpose()
     with kolumny[1]:
         st.dataframe(tabelka, hide_index=True)
 
 if przycisk2:
     przelicz2()
-    tabelka = pd.DataFrame({"Kwota":kwota,"VAT":kwotavat,"Cło?":clo}, index=([1]))
+    tabelka = pd.DataFrame({"Kwota w zł":kwota,"VAT (23%)":kwotavat,"Cło?":clo}, index=([1]))
     tabelka2 = tabelka.transpose()
     with kolumny[1]:
         st.dataframe(tabelka, hide_index=True)
