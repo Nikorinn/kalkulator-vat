@@ -17,6 +17,7 @@ euro = requests.get("https://api.frankfurter.app/latest", params=parametryeuro)
 odczytanaeur = euro.json()
 czyclo=odczytanaeur["rates"]["PLN"]
 
+url = "https://ksiegowosc.infor.pl/obrot-gospodarczy/clo/5295930,Paczki-spoza-UE-zasady-i-koszty-obslugi-zgloszen-celnopodatkowych-od-1-lipca-2021-r.html"
 
 def przelicz1():
     global kwota
@@ -35,7 +36,7 @@ def przelicz1():
         clo = "Tak"
     else:
         tekst1 = st.write(f"Kwota twojego zamówienia to {kwota} zł. \n Zapłacisz {kwotavat} zł podatku VAT + 8,50 zł opłaty pocztowej (´⊙ω⊙`)！")
-        tekst2 = st.write(f"Kwota zamówienia nie przekracza 150 EUR ({czyclo} zł). \n Nie musisz płacić cła ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ")
+        tekst2 = st.write(f"Kwota zamówienia nie przekracza 150 EUR ({czyclo} zł). \n Nie musisz płacić [cła](%s)" % url "٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ")
         clo = "Nie"
 
 def przelicz2():
