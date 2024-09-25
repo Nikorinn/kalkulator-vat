@@ -32,7 +32,7 @@ def przelicz1():
         tekst1 = st.write(f"""Nie podałeś kwoty.""")
     elif kwota >= czyclo:
         tekst1 = st.write(f"Kwota twojego zamówienia to {kwota} zł. \n Zapłacisz {kwotavat} zł podatku VAT + 8,50 zł opłaty pocztowej (´⊙ω⊙`)！")
-        tekst2 = st.write(f"""Kwota zamówienia przekracza 150 EUR ({czyclo} zł).\n Możliwe oclenie paczki ಥ‿ಥ""")
+        tekst2 = st.write(f"""Kwota zamówienia przekracza 150 EUR ({czyclo} zł).\n Możliwe [oclenie](%s)" % url , "paczki ಥ‿ಥ""")
         clo = "Tak"
     else:
         tekst1 = st.write(f"Kwota twojego zamówienia to {kwota} zł. \n Zapłacisz {kwotavat} zł podatku VAT + 8,50 zł opłaty pocztowej (´⊙ω⊙`)！")
@@ -51,12 +51,12 @@ def przelicz2():
         tekst1 = st.write(f"""Nie podałeś kwoty.""")
     elif kwota >= czyclo:
         tekst1 = (f"Kwota twojego zamówienia to {kwota} zł. \n Zapłacisz {kwotavat} zł podatku VAT + 8,50 zł opłaty pocztowej (´⊙ω⊙`)！")
-        tekst2 = st.write(f"Kwota zamówienia przekracza 150 EUR ({czyclo} zł). \n Możliwe oclenie paczki ಥ‿ಥ")
+        tekst2 = st.write(f"Kwota zamówienia przekracza 150 EUR ({czyclo} zł). \n Możliwe [oclenie](%s)" % url , "paczki ಥ‿ಥ")
         clo = "Tak"
 
     else:
         tekst1 = st.write(f"Kwota twojego zamówienia to {kwota} zł. \n Zapłacisz {kwotavat} zł podatku VAT + 8,50 zł opłaty pocztowej (´⊙ω⊙`)！")
-        tekst2 = st.write(f"Kwota zamówienia nie przekracza 150 EUR ({czyclo} zł). \n Nie musisz płacić cła ٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ")
+        tekst2 = st.write(f"Kwota zamówienia nie przekracza 150 EUR ({czyclo} zł). \n Nie musisz płacić [cła](%s)" % url , "٩(•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ")
         clo = "Nie"
 
 
